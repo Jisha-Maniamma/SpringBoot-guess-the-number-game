@@ -37,7 +37,7 @@ public class NumberGeneratorImpl implements NumberGenerator{
     // == public methods ==
     @Override
     public int next() {
-        minNumber=maxNumber-minNumber;
+
         return random.nextInt((maxNumber-minNumber)+minNumber);
     }
 
