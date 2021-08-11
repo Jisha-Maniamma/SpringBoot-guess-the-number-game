@@ -1,6 +1,7 @@
 package juntos.itSpringFaramewor;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
@@ -10,16 +11,16 @@ import java.util.Random;
  * @date 2021/08/06 9:46
  */
 //
-//@Component("generator")
+@Component
 public class NumberGeneratorImpl implements NumberGenerator{
 
     // == fields section ==
     private final Random random=new Random();
-    @Autowired
+//    @Autowired
     @MaxNumber
     private int maxNumber;
 
-    @Autowired
+//    @Autowired
     @MinNumber
     private int minNumber;
 
@@ -28,11 +29,11 @@ public class NumberGeneratorImpl implements NumberGenerator{
 //
 //    private  final int minNumber;
 //
-//    @Autowired
-//    public NumberGeneratorImpl(@MaxNumber int MaxNumber,@MinNumber int minNumber){
-//        this.minNumber=minNumber;
-//        this.maxNumber=MaxNumber;
-//    }
+    @Autowired
+    public NumberGeneratorImpl(@MaxNumber int MaxNumber,@MinNumber int minNumber){
+        this.minNumber=minNumber;
+        this.maxNumber=MaxNumber;
+    }
 
     // == public methods ==
     @Override

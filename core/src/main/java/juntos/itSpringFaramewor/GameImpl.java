@@ -2,7 +2,7 @@ package juntos.itSpringFaramewor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -12,7 +12,7 @@ import javax.annotation.PreDestroy;
  * @version 1.0
  * @date 2021/08/06 11:01
  */
-//@Component
+@Component
 public class GameImpl implements Game{
 
     // == constants ==
@@ -21,10 +21,15 @@ public class GameImpl implements Game{
 
     // == fields ==
 
-    @Autowired
+  //  @Autowired
     private NumberGenerator numberGenerator;
 
-    @Autowired
+    public GameImpl(NumberGenerator numberGenerator,@GuessCount int guessCount) {
+        this.numberGenerator = numberGenerator;
+        this.guessCount = guessCount;
+    }
+
+    //  @Autowired
     @GuessCount
     private int guessCount;
     private int guess;
