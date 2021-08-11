@@ -1,5 +1,6 @@
 package juntos.itSpringFaramewor;
 
+import lombok.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ import javax.annotation.PreDestroy;
  * @version 1.0
  * @date 2021/08/06 11:01
  */
+@Getter
 @Component
 public class GameImpl implements Game{
 

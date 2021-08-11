@@ -35,10 +35,16 @@
 
         </dependency>
         <dependency>
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <scope>system</scope>
+            <systemPath>${basedir}/../libs/lombok-edge.jar</systemPath>
+
+
+
         </dependency>
 
     </dependencies>
