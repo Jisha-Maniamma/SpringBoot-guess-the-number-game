@@ -2,8 +2,7 @@ package Juntos.itSpringFaramewor.console;
 
 import juntos.itSpringFaramewor.Game;
 import juntos.itSpringFaramewor.MessageGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -16,9 +15,10 @@ import java.util.Scanner;
  * @version 1.0
  * @date 2021/08/10 11:10
  */
+@Slf4j
 @Component
 public class ConsoleNumberGuess {
-    public static final Logger log= LoggerFactory.getLogger(ConsoleNumberGuess.class);
+//    public static final Logger log= LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
 
   //  @Autowired

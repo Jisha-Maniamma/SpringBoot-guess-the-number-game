@@ -1,5 +1,6 @@
 package juntos.itSpringFaramewor;
 
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +11,7 @@ import java.util.Random;
  * @version 1.0
  * @date 2021/08/06 9:46
  */
-//
+@Getter
 @Component
 public class NumberGeneratorImpl implements NumberGenerator{
 
@@ -42,12 +43,12 @@ public class NumberGeneratorImpl implements NumberGenerator{
         return random.nextInt((maxNumber-minNumber)+minNumber);
     }
 
-    @Override
-    public int getMaxNumber() {
-        return maxNumber;
-    }
-
-    public int getMinNumber() {
-        return minNumber;
-    }
+//    @Override
+//    public int getMaxNumber() {
+//        return maxNumber;
+//    }
+//
+//    public int getMinNumber() {
+//        return minNumber;
+//    }
 }

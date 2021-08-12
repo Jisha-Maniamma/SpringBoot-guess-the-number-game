@@ -1,8 +1,7 @@
 package juntos.itSpringFaramewor;
 
 import lombok.Getter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -13,13 +12,15 @@ import javax.annotation.PostConstruct;
  * @version 1.0
  * @date 2021/08/10 8:32
  */
+@Slf4j
 @Getter
 @Component
 public class MessageGeneratorImpl implements  MessageGenerator{
 
-    public static final Logger log=LoggerFactory.getLogger(MessageGeneratorImpl.class);
+//    public static final Logger log=LoggerFactory.getLogger(MessageGeneratorImpl.class);
 
   //  @Autowired
+
     private Game game;
 
     public MessageGeneratorImpl(Game game) {
