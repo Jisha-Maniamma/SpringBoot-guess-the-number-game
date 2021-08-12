@@ -2,8 +2,7 @@ package Juntos.itSpringFaramewor.console;
 
 
 import juntos.itSpringFaramewor.config.GameConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -12,8 +11,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @version 1.0
  * @date 2021/08/05 11:37
  */
+@Slf4j
 public class Main {
-    public static final Logger log= LoggerFactory.getLogger(Main.class);
+//    public static final Logger log= LoggerFactory.getLogger(Main.class);
 //    private static  final String CONFIG_LOCATION="beans.xml";
 
     public static void main(String[] args) {
