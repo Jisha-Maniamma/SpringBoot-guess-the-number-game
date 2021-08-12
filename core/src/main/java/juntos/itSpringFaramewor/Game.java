@@ -12,7 +12,7 @@ public interface Game {
     void setGuess(int guess);
     int getSmallest();
     int getBiggest();
-    int getRemaining();
+    int getRemainingGuesses();
     int getGuessCount();
     void rest();
     void check();

@@ -50,7 +50,7 @@ public class MessageGeneratorImpl implements  MessageGenerator{
         }
         else if(!game.isValidNumberRange()){
             return "Invalid number range";
-        }else if(game.getRemaining()==game.getGuessCount()){
+        }else if(game.getRemainingGuesses()==game.getGuessCount()){
             return "what s your first guss";
         }else{
             String direction="Lower";
@@ -58,7 +58,7 @@ public class MessageGeneratorImpl implements  MessageGenerator{
             if(game.getGuess()<game.getNumber()){
                 direction="Higher";
             }
-            return direction+"! you have "+game.getRemaining()+" guesses left ";
+            return direction+"! you have "+game.getRemainingGuesses()+" guesses left ";
 
         }
     }
