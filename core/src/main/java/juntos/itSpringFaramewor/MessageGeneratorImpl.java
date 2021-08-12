@@ -1,6 +1,5 @@
 package juntos.itSpringFaramewor;
 
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +12,7 @@ import javax.annotation.PostConstruct;
  * @date 2021/08/10 8:32
  */
 @Slf4j
-@Getter
+
 @Component
 public class MessageGeneratorImpl implements  MessageGenerator{
 
