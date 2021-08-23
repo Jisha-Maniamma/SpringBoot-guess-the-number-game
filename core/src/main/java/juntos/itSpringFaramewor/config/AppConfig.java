@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Import;
 public class AppConfig {
 
 // ==bean methods ==
-
+//
 //    @Bean
 //    public NumberGenerator numberGenerator(){
 //        return new NumberGeneratorImpl();

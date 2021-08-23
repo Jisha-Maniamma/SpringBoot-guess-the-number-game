@@ -4,6 +4,8 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -17,6 +19,7 @@ import javax.annotation.PreDestroy;
 @Slf4j
 @Getter
 @Component
+@Configuration
 public class GameImpl implements Game{
 
     // == constants ==
@@ -29,6 +32,7 @@ public class GameImpl implements Game{
     @Getter(AccessLevel.NONE)
     private NumberGenerator numberGenerator;
 
+    @Autowired
     public GameImpl(NumberGenerator numberGenerator,@GuessCount int guessCount) {
         this.numberGenerator = numberGenerator;
         this.guessCount = guessCount;
